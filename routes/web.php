@@ -16,3 +16,20 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+// $router->get('/key', function () {
+//   return \Illuminate\Support\Str::random(32);
+// });
+
+$router->group(['prefix' => 'api'], function () use ($router) {
+    $router->get('productgroups', ['uses' => 'ProductGroupsController@getAll']);
+    $router->get('productgroups/{id}', ['uses' => 'ProductGroupsController@getById']);
+    $router->post('productgroups', ['uses' => 'ProductGroupsController@create']);
+    $router->put('productgroups/{id}', ['uses' => 'ProductGroupsController@update']);
+    $router->delete('productgroups/{id}', ['uses' => 'ProductGroupsController@delete']);
+    
+    $router->get('todos', ['uses' => 'TodosController@getAll']);
+    $router->get('todos/{id}', ['uses' => 'TodosController@getById']);
+    $router->post('todos', ['uses' => 'TodosController@create']);
+    $router->put('todos/{id}', ['uses' => 'TodosController@update']);
+    $router->delete('todos/{id}', ['uses' => 'TodosController@delete']);
+});

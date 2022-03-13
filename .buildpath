@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="app/Console"/>
+	<buildpathentry kind="src" path="app/Events"/>
+	<buildpathentry kind="src" path="app/Exceptions"/>
+	<buildpathentry kind="src" path="app/Http/Controllers"/>
+	<buildpathentry kind="src" path="app/Http/Middleware"/>
+	<buildpathentry kind="src" path="app/Jobs"/>
+	<buildpathentry kind="src" path="app/Listeners"/>
+	<buildpathentry kind="src" path="app/Models"/>
+	<buildpathentry kind="src" path="app/Providers"/>
+	<buildpathentry kind="src" path="bootstrap"/>
+	<buildpathentry kind="src" path="database/factories"/>
+	<buildpathentry kind="src" path="database/migrations"/>
+	<buildpathentry kind="src" path="database/seeders"/>
+	<buildpathentry kind="src" path="public"/>
+	<buildpathentry kind="src" path="routes"/>
+	<buildpathentry kind="src" path="tests"/>
+	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
